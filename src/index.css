@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* rock font*/
+@font-face {
+  font-family: rock;
+  src: url(./assets/fonts/RockSalt-Regular.ttf);
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+/* reuseable classes */
+.main-container {
+  @apply max-w-7xl w-11/12 md:w-[87%] mx-auto;
+}
+
+.logo {
+  @apply text-[clamp(1.5rem,2vw+1rem,2.5rem)]  font-heading text-clr-secondary;
+}
+
+.hireme {
+  @apply text-clr-primary border-2 border-clr-primary px-5 md:px-8 py-2 md:py-3 font-bold font-heading text-[10px] md:text-sm rounded-md hover:text-white transition-colors hover:bg-clr-primary hover:border-white whitespace-nowrap outline-none;
+}
+
+/* parallax animation  */
+.hill {
+  @apply absolute grayscale left-0;
+}
